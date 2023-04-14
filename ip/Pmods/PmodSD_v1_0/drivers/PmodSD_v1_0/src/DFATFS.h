@@ -76,8 +76,8 @@
 #define _FATFS_INCLUDE_
 
 //#include <Arduino.h>
-#include "utility/fs_ff.h"
-#include "utility/fs_diskio.h"
+#include "fs_ff.h"
+#include "fs_diskio.h"
 #include "xil_types.h"
 #include <stdarg.h>
 

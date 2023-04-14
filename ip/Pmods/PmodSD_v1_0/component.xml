@@ -1930,7 +1930,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>drivers/PmodSD_v1_0/src/utility/fs_integer.h</spirit:name>
+        <spirit:name>drivers/PmodSD_v1_0/src/fs_integer.h</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1938,7 +1938,7 @@
         <spirit:fileType>unknown</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/PmodSD_v1_0/src/utility/fs_diskio.h</spirit:name>
+        <spirit:name>drivers/PmodSD_v1_0/src/fs_diskio.h</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1954,11 +1954,11 @@
         <spirit:userFileType>mdd</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/PmodSD_v1_0/src/utility/fs_ff.c</spirit:name>
+        <spirit:name>drivers/PmodSD_v1_0/src/fs_ff.c</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/PmodSD_v1_0/src/utility/fs_ff.h</spirit:name>
+        <spirit:name>drivers/PmodSD_v1_0/src/fs_ff.h</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1974,7 +1974,7 @@
         <spirit:fileType>cppSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/PmodSD_v1_0/src/utility/fs_ffconf.h</spirit:name>
+        <spirit:name>drivers/PmodSD_v1_0/src/fs_ffconf.h</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
       </spirit:file>
       <spirit:file>

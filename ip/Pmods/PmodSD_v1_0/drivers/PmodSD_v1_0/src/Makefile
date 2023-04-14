@@ -12,10 +12,10 @@ RELEASEDIR=../../../lib
 INCLUDEDIR=../../../include
 INCLUDES=-I./. -I${INCLUDEDIR}
 
-LIBSOURCES=*.c *.cpp utility/*.c
+LIBSOURCES=*.c *.cpp 
 INCLUDEFILES:=*.h
 
-OBJECTS=$(addsuffix .o, $(basename $(wildcard *.c) $(wildcard *.cpp) $(wildcard utility/*.c)))
+OBJECTS=$(addsuffix .o, $(basename $(wildcard *.c) $(wildcard *.cpp) ))
 
 IPNAME=PmodSD
 
@@ -27,8 +27,8 @@ libs: banner ${IPNAME}_libs clean
 %.o: %.cpp
 	${COMPILER} $(CC_FLAGS) $(ECC_FLAGS) $(INCLUDES) -o $@ $<
 
-utility/%.o: utility/%.c
-	${COMPILER} $(CC_FLAGS) $(ECC_FLAGS) $(INCLUDES) -o $@ $<
+# utility/%.o: utility/%.c
+# 	${COMPILER} $(CC_FLAGS) $(ECC_FLAGS) $(INCLUDES) -o $@ $<
 
 banner:
 	echo "Compiling ${IPNAME}..."
@@ -41,8 +41,8 @@ include: ${IPNAME}_includes
 
 ${IPNAME}_includes:
 	${CP} ${INCLUDEFILES} ${INCLUDEDIR}
-	if not exist "$(INCLUDEDIR)/utility" md "$(INCLUDEDIR)/utility"
-	${CP} utility/*.h $(INCLUDEDIR)/utility
+	# if not exist "$(INCLUDEDIR)/utility" md "$(INCLUDEDIR)/utility"
+	# ${CP} utility/*.h $(INCLUDEDIR)/utility
 
 clean:
 	rm -rf ${OBJECTS}
